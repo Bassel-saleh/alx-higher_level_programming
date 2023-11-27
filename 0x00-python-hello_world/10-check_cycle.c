@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * chech_cycle - checks it is cyclical
  * @list: pointer to list
@@ -15,5 +17,5 @@ int check_cycle(listint_t *list)
 		if (slow == fast)
 			return (1);
 	}
-	return(0);
+	return (0);
 }
