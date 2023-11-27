@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * chech_cycle - checks it is cyclical
+ * check_cycle - checks it is cyclical
  * @list: pointer to list
  * Return: 1 if cyclical, 0 if not
  */
