@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
 #include <stdlib.h>
 /**
  * insert_node - insert a number in a linked list based on its value
