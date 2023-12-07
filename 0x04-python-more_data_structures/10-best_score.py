@@ -4,8 +4,8 @@ def best_score(a_dictionary):
         return None
     max_v = 0
     max_k = None
-    for k, v in a_dictionary.items():
-        if v > max_v:
-            max_v = v
-            max_k = k
+    for key, value  in a_dictionary.items():
+        if value > max_v:
+            max_v = value
+            max_k = key
     return max_k
