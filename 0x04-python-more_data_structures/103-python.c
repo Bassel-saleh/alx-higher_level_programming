@@ -41,7 +41,7 @@ void print_python_bytes(PyObject *p)
 	printf("[.] bytes object info\n");
 	if (strcmp(p->ob_type->tp_name, "bytes") != 0)
 	{
-		printf("  [ERROR] invalid Bytes Object\n");
+		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
 	printf("  size: %ld\n", ((PyVarObject *)p)->ob_size);
