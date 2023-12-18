@@ -2,11 +2,11 @@
 def safe_print_list(my_list=[], x=0):
     count = 0
     try:
-        while i is not x:
-            print(my_list[i], end='')
+        while count is not x:
+            print(my_list[count], end='')
             count += 1
     except IndexError:
         None
     print()
-    return i
+    return count
 
