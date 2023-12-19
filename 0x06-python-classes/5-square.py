@@ -29,5 +29,5 @@ class Square:
         """print the length of square"""
         for i in range(self.size):
             for j in range(self.size):
-                print("#", end="\n" if j is self size - 1 and i != j else "")
-                print()
+                print("#", end="\n" if j is self.size - 1 and i != j else "")
+        print()
