@@ -3,6 +3,8 @@
 Defining a Rectangle
 """
 
+
 class Rectangle:
     """Empty rep"""
+
     pass
