@@ -79,4 +79,4 @@ class Rectangle:
         Args:
             size: size of the square
         '''
-        return cls(size, size)
+        return Rectangle(size, size)
