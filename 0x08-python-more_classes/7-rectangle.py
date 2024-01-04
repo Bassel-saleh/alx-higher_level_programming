@@ -9,7 +9,7 @@ class Rectangle:
 
     number_of_instances = 0
 
-    print_sympol = '#'
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         self.height = height
@@ -51,7 +51,7 @@ class Rectangle:
     def __str__(self):
         he = self.__height
         we = self.__width
-        if self.__width != 0 and self.__height != 0:
+        if not self.__width or not self.__height:
             return ""
         return ((str(self.print_symbol) * we + "\n") * he) [:-1]
 
