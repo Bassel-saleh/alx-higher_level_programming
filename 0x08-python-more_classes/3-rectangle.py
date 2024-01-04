@@ -46,5 +46,5 @@ class Rectangle:
         he = self.__height
         myStr = ""
         if self.__width != 0 and self.__height != 0:
-            myStr += "\n".join("#" * self.__width for j in range(he))
-            return myStr
+            myStr += "\n".join("#" * self.__width for i in range(he))
+        return myStr
