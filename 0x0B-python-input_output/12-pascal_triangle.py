@@ -12,7 +12,7 @@ def pascal_triangle(n):
         tria = triangles[-1]
         temp = [1]
         for j in range(len(tria) - 1):
-            temp.append(tria[j] + tria[j+1])
+            temp.append(tria[j] + tria[j + 1])
         temp.append(1)
         triangles.append(temp)
     return trianlges
