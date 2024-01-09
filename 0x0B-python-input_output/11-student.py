@@ -24,6 +24,7 @@ class Student:
             if key in attrs:
                 c_dict[key] = value
         return c_dict
+
     def reload_from_json(self, json):
         ''' replaces all attributes of the Student instance '''
         for key, value in json.items():
