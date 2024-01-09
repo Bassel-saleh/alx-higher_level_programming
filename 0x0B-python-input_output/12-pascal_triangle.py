@@ -15,4 +15,4 @@ def pascal_triangle(n):
             temp.append(tria[j] + tria[j + 1])
         temp.append(1)
         triangles.append(temp)
-    return trianlges
+    return triangles
