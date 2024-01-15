@@ -5,7 +5,7 @@ import csv
 
 
 class Base:
-    ''' representation of class  base '''
+    ''' representation of class Base '''
 
     __nb_objects = 0
 
