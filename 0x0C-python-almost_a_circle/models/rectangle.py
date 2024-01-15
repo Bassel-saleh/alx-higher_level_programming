@@ -99,3 +99,8 @@ class Rectangle(Base):
             self.updateHelper(*args)
         elif kwargs:
             self.updateHelper(**kwargs)
+
+    def to_dictionary(self):
+        ''' Returns dictionary of this class '''
+        return {"id": self.id, "width": self.__width, "height": self.__height,
+                "x": self.__x, "y": self.__y}
