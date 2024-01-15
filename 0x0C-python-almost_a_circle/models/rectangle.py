@@ -2,10 +2,10 @@
 """
 Define class Rectangle
 """
-from models.base import base
+from models.base import Base
 
 
-class Rectangle(base):
+class Rectangle(Base):
     """Represents Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
