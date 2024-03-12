@@ -4,13 +4,13 @@ const entries = Object.entries(dict);
 const values = Object.values(dict);
 const UniqueV = [...new Set(values)];
 const newDict = {};
-for (const j in UniqueV) {
+for (const i in UniqueV) {
   const list = [];
-  for (const k in entries) {
-    if (entries[k][1] === UniqueV[j]) {
-      list.unshift(entries[k][0]);
+  for (const j in entries) {
+    if (entries[j][1] === UniqueV[i]) {
+      list.unshift(entries[j][0]);
     }
   }
-  newDict[UniqueV[j]] = list;
+  newDict[UniqueV[i]] = list;
 }
 console.log(newDict);
