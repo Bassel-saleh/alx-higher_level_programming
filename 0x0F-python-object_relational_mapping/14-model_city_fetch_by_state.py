@@ -11,6 +11,6 @@ if __name__ == "__main__":
     Base.metadata.create_all(start)
     Session = sessionmaker(bind=start)
     session = Session()
-    q = (State.name, City.id, City.name).filter(State.id == City.state_id)
-    for kd in (session.query(q).filter(State.id == City.state_id)):
+    for kd in (session.query(State.name, City.id, City.name)
+               .filter(State.id == City.state_id)):
         print(kd[0] + ": (" + str(kd[1]) + ") " + kd[2])
