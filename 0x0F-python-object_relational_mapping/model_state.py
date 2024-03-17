@@ -6,7 +6,7 @@ mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
 
 
-class state(Base):
+class State(Base):
     """intiates state class which inherit from Base
     """
     __tablename__ = 'states'
