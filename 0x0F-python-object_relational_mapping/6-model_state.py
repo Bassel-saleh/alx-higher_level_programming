@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" connect class to database """
+""" connect class to database
+"""
 import sys
 from model_state import base, state
 from sqlalchemy import (create_engine)
