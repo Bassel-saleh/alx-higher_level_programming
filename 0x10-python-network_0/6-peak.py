@@ -8,6 +8,7 @@ def find_peak(list_of_integers):
 
     Args:
         list_of_integers (list): the list to be checked
+    Returns: the peak of the list
     """
     if list_of_integers is None or list_of_integers == []:
         return None
