@@ -11,7 +11,7 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
     mail = {"email": sys.argv[2]}
-    t = urllib.parse.urlencode(mail).encode("utf-8")
+    t = urllib.parse.urlencode(mail).encode("ascii")
     r = urllib.request.Request(url, mail)
     with urllib.request.urlopen(r) as rspns:
         print(rspns.read().decode("utf-8"))
