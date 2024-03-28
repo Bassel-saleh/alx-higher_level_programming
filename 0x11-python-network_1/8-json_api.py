@@ -7,7 +7,7 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    if len (sys.argv) > 1:
+    if len(sys.argv) > 1:
         letter = sys.argv[1]
     else:
         letter = ""
@@ -16,7 +16,8 @@ if __name__ == "__main__":
     try:
         json_rspns = rspns.json()
         if json_rspns:
-            print("[{}] {}".format(json_rspns.get("id"), json_rspns.get("name")))
+            print("[{}] {}".format(
+                json_rspns.get("id"), json_rspns.get("name")))
         else:
             print("No result")
     except ValueError:
