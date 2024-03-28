@@ -3,11 +3,18 @@
 takes your GitHub credentials (username and password)
 and uses the GitHub API to display your id
 """
-from urllib.request import HTTPBasicAuthHandler
 import requests
 import sys
 
 if __name__ == "__main__":
-    Auth = HTTPBasicAuthHandler(sys.argv[1], sys.argv[2])
-    rspns = requests.get("https://api.github.com/user", auth=Auth)
-    print(rspns.json().get("id"))
+    usr = sys.argv[1]
+    passcode = sys.argv[2]
+    url = "https://api.github.com/user"
+    auth = (usr, passcode)
+    rspns = requests.get(url, auth=auth)
+    if rspns.status_code == 200:
+        usr_info = rspns.json()
+        usr_id = usr_info['id']
+        print(usr_id)
+    else:
+        print(None)
