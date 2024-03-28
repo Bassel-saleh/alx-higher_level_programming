@@ -16,7 +16,7 @@ if __name__ == "__main__":
     try:
         json_rspns = rspns.json()
         if json_rspns:
-            print("[{}] {}".format(json_rspns[id], json_rspns['name']))
+            print("[{}] {}".format(json_rspns.get("id"), json_rspns.get("name")))
         else:
             print("No result")
     except ValueError:
